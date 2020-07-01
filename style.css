@@ -1,4 +1,109 @@
 
+/* Groups & Items  (Mobile First) */
+.wrapper {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: item;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+/* Center align my welcome image */
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.image-center{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.image-project{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  width: 75%;
+}
+
+form textarea {
+  height: 4.75rem;
+  width: 100%;
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+
+/* Groups & Items  (Desktop) */
+
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 100%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: group;
+  }
+
+  /* group and two item setup */
+  .group-row {
+    display: flex;
+  }
+
+  .item-column {
+    flex: 50%;
+    padding: 10px;
+  }
+
+  /* Center align my welcome image */
+  .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .image-center{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .image-project{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+
+  form textarea {
+    height: 4.75rem;
+    width: 50%;
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+
 /* Background banner at the top of my page */
 header {
   background-image: url("images/keyboard.jpg");
@@ -65,9 +170,12 @@ a:active  { color: rgb(160, 21, 45);  }
 }
 
 article {
-  /* border: 3px solid #668284; */
   padding: 10px;
   background-color: #B9D7D9;
+}
+
+article a {
+  padding: 0 5px;
 }
 
 /*To do: Figure out how to auto scale image to screen size*/
@@ -76,16 +184,6 @@ img {
   max-height: 200px;
   margin-left: auto;
   margin-right: auto;
-}
-
-/* Row and two column setup */
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 50%;
-  padding: 10px;
 }
 
 h1 {
@@ -106,43 +204,12 @@ p{
   font-family: Arial;
 }
 
-/* Center align my welcome image */
-.center{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-/* Groups & Items  (Mobile First) */
-.wrapper {
-  width: 100%;
-}
-
-.group {
+form label {
   display: flex;
-  flex-direction: column;
+  font-size: 18px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  font-family: arial;
 }
 
-.item {
-  flex: 1;
-  margin: 10px;
-}
 
-.item-double {
-  flex: 2;
-  margin: 10px;
-}
-
-/* Groups & Items  (Desktop) */
-
-@media all and (min-width: 800px) {
-  .wrapper {
-    width: 100%;
-    margin: auto;
-  }
-
-  .group {
-    flex-direction: row;
-  }
-}

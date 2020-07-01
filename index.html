@@ -19,11 +19,11 @@
 
   <!--My navigation bar as buttons  -->
   <div class="nav">
-    <a href="#container-1">Welcome</a>
-    <a href="#container-2">Intro</a>
-    <a href="#container-3">About</a>
-    <a href="#container-3.5">Projects</a>
-    <a href="#container-4">Contact</a>
+    <a href="#welcome">Welcome</a>
+    <a href="#intro">Intro</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
   </div>
 
   <br>
@@ -31,21 +31,21 @@
   <!--Articles to set up the core of my webpage.  -->
   <main>
     <div class="article-text">
-      <article id="container-1">
+      <article id="welcome">
         <h2>Welcome to my personal webpage</h2>
           <img src="images/code.jpg" class="center">
       </article>
 
       <br>
 
-      <!-- I broke these into columns to fill in space a little better. -->
-      <article id="container-2">
+      <!-- I broke these into items to fill in space a little better. -->
+      <article id="intro">
         <h3>Introduction</h3>
-        <div class="row">
-          <div class="column">
-            <img src="images/keys.jpg">
+        <div class="group-row">
+          <div class="item-column">
+            <img src="images/keys.jpg" class="image-center">
           </div>
-          <div class="column">
+          <div class="item-column">
             <p>I'm Justin Foster. I live in North Carolina at the moment, and I’ve always wanted to get into the tech field but haven’t had the right opportunity, so I decided enough is enough, I’m quitting my job and going into the Engineering Immersion program with Thinkful. I’m excited to move into a career field I’ll enjoy.</p>
           </div>
         </div>
@@ -53,77 +53,101 @@
 
       <br>
 
-      <article id="container-3">
+      <article id="about">
         <h3>About Me</h3>
-        <div class="row">
+        <div class="group-row">
 
-          <div class="column">
+          <div class="item-column">
             <p>I’m eager to learn how to code and being able to represent code to viewers through html. I want to be involved with making great user experiences through both front and back end technology and look forward to the opportunity to collaborate on those technologies with my fellow employees.</p>
 
             <p> In my spare time I enjoy reading, playing games, and learning about anything that happens to interest me at the moment. Whatever I do, I enjoy it even more when I can do it with others that share the same interests.
             </p>
           </div>
-          <div class="column">
-            <img src="images/typing.jpg">
+          <div class="item-column">
+            <img src="images/typing.jpg" class="image-center">
           </div>
         </div>
       </article>
 
       <br>
 
-      <!--
-      <article id="container-3.5">
-        <h3>My Projects</h3>
-        <div class="row">
-          <div class="column">
-            <img src="images/binary.jpg">
-          </div>
-          <div class="column">
-            <p>What I've done.</p>
-            <ul>
-              <li>Placeholder 1</li>
-              <li>Placeholder 2</li>
-              <li>Placeholder 3</li>
-            </ul>
-          </div>
-        </div>
-      </article>
-    -->
+      <!--Future links and showcase for my projects-->
       <div class = "wrapper">
-        <article id = "container-3.5">
+        <article id = "projects">
           <h3>My Projects</h3>
-          <div class = "group">
-            <div class = "item">
-              <img src = "images/binary.jpg" alt = "Placeholder 1 screenshot"> 
+          <div class = "group-row">
+            <div class = "item-column">
+              <img src = "images/binary.jpg" alt = "Placeholder 1 screenshot" class="image-project"> 
               <h4>Placeholder 1</h4>
-              <p>This is my first project. Let me tell you about it.</p>
+              <p>This is my x project. I built it for y so that we could accomplish z.</p>
+              <p>These are the skills I utilized while making the project.</p>
+              <a href="placeholder">GitHub Repo</a>
+              <a href="placeholder">Live Page</a>
             </div>
-            <div class = "item">
-              <img src = "images/binary.jpg" alt = "Placeholder 2 screenshot"> 
+            <div class = "item-column">
+              <img src = "images/binary.jpg" alt = "Placeholder 2 screenshot" class="image-project"> 
               <h4>Placeholder 2</h4>
-              <p>This is my first project. Let me tell you about it.</p>
+              <p>This is my x project. I built it for y so that we could accomplish z.</p>
+              <p>These are the skills I utilized while making the project.</p>
+              <a href="placeholder">GitHub Repo</a>
+              <a href="placeholder">Live Page</a>
             </div>
-            <div class = "item">
-              <img src = "images/binary.jpg" alt = "Placeholder 3 screenshot"> 
+            
+            <div class = "item-column">
+              <img src = "images/binary.jpg" alt = "Placeholder 3 screenshot" class="image-project"> 
               <h4>Placeholder 3</h4>
-              <p>This is my first project. Let me tell you about it.</p>
+              <p>This is my x project. I built it for y so that we could accomplish z.</p>
+              <p>These are the skills I utilized while making the project.</p>
+              <a href="placeholder">GitHub Repo</a>
+              <a href="placeholder">Live Page</a>
             </div>
-            <div class = "item">
-              <img src = "images/binary.jpg" alt = "Placeholder 4 screenshot"> 
+            <div class = "item-column">
+              <img src = "images/binary.jpg" alt = "Placeholder 4 screenshot" class="image-project"> 
               <h4>Placeholder 4</h4>
-              <p>This is my first project. Let me tell you about it.</p>
+              <p>This is my x project. I built it for y so that we could accomplish z.</p>
+              <p>These are the skills I utilized while making the project.</p>
+              <a href="placeholder">GitHub Repo</a>
+              <a href="placeholder">Live Page</a>
             </div>
+            
           </div>
         </article>
       </div>
-
     </div>
+
+    </br>
+
+    <!--Contact form-->
+    <article id="contact">
+    <form action="https://formspree.io/jfoster91@gmail.com" method="post">
+      <fieldset>
+          <legend>Contact Me</legend>
+          <div>
+              <label for="user-name">Name: </br></label>
+              <input id="user-name" type="text" name="name" autofocus="on" maxlength="30" required />
+          </div>
+          <div>
+              <label for="user-email">Email: </br></label>
+              <input id="user-email" type="text" name="email" autofocus="on" maxlength="30" required />
+          </div>
+          <div>
+              <label for="user-message">Your message: </br></label>
+              <textarea id="user-message" type="text" name="message" autofocus="on" maxlength="300" required></textarea>
+          </div>
+          <div>
+              <button type="submit">Submit</button>
+          </div>
+          </legend>
+      </fieldset>
+    </form>
+    </article>
+
   </main>
 
   <!-- Links in my footer with contact information -->
   <footer>
     <div>
-      <nav id="container-4">
+      <nav id="contact">
         <a href="https://www.linkedin.com/in/justin-foster-7a540356/">LinkedIn</a>
         <a href="https://github.com/justin-foster-91">GitHub</a>
         <a href="mailto:justinfoster@gmail.com">Email</a>
