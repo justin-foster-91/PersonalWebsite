@@ -19,6 +19,10 @@
   margin: 10px;
 }
 
+fieldset {
+  
+}
+
 /* Center align my welcome image */
 .center{
   display: block;
@@ -116,11 +120,11 @@ body {
  background-color: #2f4e6b;
  padding: 15px 15% 15px 15%;
 }
-
+/*
 main {
 
 }
-
+*/
 /* Background for my footer nav bar */
 footer {
   margin: 200px 0 0 0;
