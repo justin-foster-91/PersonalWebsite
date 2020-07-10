@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-<html lang="en"></html>
+<html lang="en">
 
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
@@ -119,26 +118,25 @@
     <br>
 
     <!--Contact form-->
-    <article id="contact">
+    <article id="contact-form">
     <form action="https://formspree.io/jfoster91@gmail.com" method="post">
       <fieldset>
-          <legend>Contact Me</legend>
+          <legend><h3>Contact Me</h3></legend>
           <div>
               <label for="user-name">Name: <br></label>
-              <input id="user-name" type="text" name="name" autofocus="on" maxlength="30" required />
+              <input id="user-name" name="name">
           </div>
           <div>
               <label for="user-email">Email: <br></label>
-              <input id="user-email" type="text" name="email" autofocus="on" maxlength="30" required />
+              <input id="user-email" name="email">
           </div>
           <div>
               <label for="user-message">Your message: <br></label>
-              <textarea id="user-message" type="text" name="message" autofocus="on" maxlength="300" required></textarea>
+              <textarea id="user-message" name="message"></textarea>
           </div>
           <div>
               <button type="submit">Submit</button>
           </div>
-          </legend>
       </fieldset>
     </form>
     </article>
@@ -148,7 +146,7 @@
   <!-- Links in my footer with contact information -->
   <footer>
     <div>
-      <nav id="contact">
+      <nav id="contact-links">
         <a href="https://www.linkedin.com/in/justin-foster-7a540356/">LinkedIn</a>
         <a href="https://github.com/justin-foster-91">GitHub</a>
         <a href="mailto:justinfoster@gmail.com">Email</a>
