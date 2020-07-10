@@ -20,7 +20,11 @@
 }
 
 fieldset {
-  
+  min-width: 0;
+}
+
+input { 
+  max-width: 100% 
 }
 
 /* Center align my welcome image */
@@ -145,12 +149,13 @@ a:hover   { color: rgb(30, 116, 30); }
 a:active  { color: rgb(160, 21, 45);  }
 
 /* Custom classes to style a couple articles. */
-.title-name, 
-.article-text, {
+/*
+.title-name, .article-text {
   width: 800px;
   margin: auto;
   padding: 20px;
 }
+*/
 
 .nav {
   overflow: hidden;
