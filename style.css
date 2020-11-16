@@ -135,18 +135,19 @@ footer {
   text-align: center;
   /* border: 3px solid #104346; */
   padding: 10px;
-  background-color: rgb(142, 166, 167);
+  background-color: rgb(171, 200, 201);
 }
 
 /* Spacing between footer links, and coloring options below. */
 footer a{
   padding: 0px 20px 0px 20px;
+  font-weight: bold;
 }
 
 a:link    { color: rgb(0, 0, 255);  }
-a:visited { color: rgb(255, 26, 26);   }
+a:visited { color: rgb(156, 20, 20);   }
 a:hover   { color: rgb(30, 116, 30); }
-a:active  { color: rgb(160, 21, 45);  }
+a:active  { color: rgb(255, 53, 53);  }
 
 /* Custom classes to style a couple articles. */
 /*
